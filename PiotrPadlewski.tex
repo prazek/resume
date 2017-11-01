@@ -50,7 +50,7 @@
 \email{piotr.padlewski@gmail.com}
 \homepage{https://github.com/prazek}{github: prazek} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
-\photo[100pt][0pt]{125} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\photo[100pt][0pt]{125} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
 %----------------------------------------------------------------------------------------
@@ -78,23 +78,24 @@
 
 %\subsection{Vocational}
 
-\cventry{July 2017 --  October 2017}{Software engineer intern}{\textsc{Microsoft}}{Redmond, USA}{}{
+\cventry{July 2017 -- October 2017}{Software engineer intern}{\textsc{Microsoft}}{Redmond, USA}{}{
 Implementing Scalar evolution framework and SCEV expander optimization.
 }
 
 
-\cventry{May 2016 --  current}{Team leader}{\textsc{IIIT}}{Warsaw, Poland}{}{
-\href{https://github.com/prazek/clang-extra}{Developing clang-tidy checks and other static analysis for BA project}
+\cventry{May 2016 -- current}{Team leader}{\textsc{IIIT}}{Warsaw, Poland}{}{
+\href{https://github.com/prazek/clang-extra}{Developing clang-tidy} and researching
+different topics like ML for SEO and robotics
 }
 
 
-\cventry{July 2016 -- October 2016}{Software engineer intern}{\textsc{Google}}{Mountain View, USA}{}{\href{http://blog.llvm.org/2016/06/thinlto-scalable-and-incremental-lto.html}{Working on ThinLTO in LLVM - scalable incremental Link Time Optimization}}
+\cventry{July 2016 -- October 2016}{Software engineer intern}{\textsc{Google}}{Mountain View, USA}{}{\href{http://blog.llvm.org/2016/06/thinlto-scalable-and-incremental-lto.html}{Improvling importer heuristics in ThinLTO (scalable incremental Link Time Optimization). The improvement on SPEC 2006 with PGO was 0.62\% geomean with up to 9\% wins}}
 
-\cventry{July 2015 -- October 2015}{Software engineer intern}{\textsc{Google}}{Mountain View, USA}{}{\href{https://docs.google.com/document/d/1f2SGa4TIPuBGm6y6YO768GrQsA8awNfGEJSBFukLhYA/edit?usp=sharing}{Working on Clang (C++ compiler) optimization based on devirtualization}}
+\cventry{July 2015 -- October 2015}{Software engineer intern}{\textsc{Google}}{Mountain View, USA}{}{\href{https://docs.google.com/document/d/1f2SGa4TIPuBGm6y6YO768GrQsA8awNfGEJSBFukLhYA/edit?usp=sharing}{Developing devirtualization (changing virtual to direct calls) for C++ in Clang and LLVM}}
 
 \cventry{July 2013 -- May 2016}{C++/Python developer}{\textsc{Gemius}}{Warsaw, Poland}{}{
-working on new GemiusAudience backend,
-developing computing cloud with resources control,
+Rewriting GemiusAudience backend to C++,
+developing computing cloud with resources control in python,
 developing configurable monitoring files parser
 }
 
@@ -120,12 +121,11 @@ developing configurable monitoring files parser
 %----------------------------------------------------------------------------------------
 
 \section{Awards}
-
-\cvitem{2013}{Finalist of Polish IT Olympiad}
-\cvitem{2012, 2013}{Finalist of Polish Innovation Technology Olympiad }
-\cvitem{2013}{Finalist of Polish Linguistics Olympiad 2012}
+\cvitem{2017}{\href{https://dl.acm.org/citation.cfm?id=3135947&CFID=1001040106&CFTOKEN=81121683}{2nd place in SPLASH Students Research Competition with paper "Devirtualization in LLVM" (undergraduate category)}}
+\cvitem{2013}{Finalist of Polish Computer Science Olympiad}
+\cvitem{2012, 2013}{Finalist of Polish Innovation of Technology Olympiad}
 \cvitem{2013}{The Best IT project at the Youth Scientists Festival "EXPLORY"}
-
+\cvitem{2012}{Finalist of Polish Linguistics Olympiad}
 \cvitem{2009}{\href{https://youtu.be/q2ru-3RcOEQ}{Square-1 World Champion -- speed solving Rubik's cube competition}}
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
@@ -133,9 +133,9 @@ developing configurable monitoring files parser
 
 \section{Computer skills}
 
-\cvitem{Advanced}{\textsc{C++11}, \textsc{Python}, \textsc{Optimizations}, \textsc{Compilers and tools}}
-\cvitem{Intermediate}{\textsc{C}, \textsc{Linux}, \textsc{Algorithms}}
-\cvitem{Basic}{\textsc{Java}, \textsc{cuda}, \textsc{asm}, \textsc{Operational Systems}, \textsc{Networking}, \textsc{ML}}
+\cvitem{Advanced}{\textsc{C++17}, \textsc{Python}, \textsc{Optimizations}, \textsc{Compilers and tools}}
+\cvitem{Intermediate}{\textsc{C}, \textsc{Algorithms}, \textsc{Deep learning}}
+\cvitem{Basic}{\textsc{Java}, \textsc{cuda}, \textsc{asm}, \textsc{Operational Systems}, \textsc{Networking}, \textsc{Linux}}
 
 
 
@@ -163,12 +163,13 @@ developing configurable monitoring files parser
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Hobbies}
+\section{Interests}
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
 \cvlistdoubleitem{Compilers infrastructure}{C++}
-\cvlistdoubleitem{\href{https://www.youtube.com/watch?v=rNNnPrMHsAA}{Giving C++ talks}}{Motorcycles}
+\cvlistdoubleitem{\href{https://www.youtube.com/watch?v=rNNnPrMHsAA}{Giving C++ talks}}{Deep learning}
+\cvlistdoubleitem{motorcycle}{electric vehicles}
 \cvlistdoubleitem{electric guitar and drums}{Speedcubing}
 
 \end{document}
