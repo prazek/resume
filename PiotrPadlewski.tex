@@ -31,6 +31,8 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 \usepackage[scale=0.75]{geometry} % Reduce document margins
+%\usepackage[scale=0.8]{geometry}
+\geometry{top=3cm,bottom=0.4cm}
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -42,7 +44,7 @@
 \familyname{Padlewski} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Curriculum Vitae}
+\title{}
 %\address{123 Broadway}{City, State 12345}
 \mobile{+48 787 603 580}
 %\phone{(000) 111 1112}
@@ -56,19 +58,15 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\vspace{-15mm}
+\vspace{-10mm}
 \section{Education}
-
-\cventry{2013 -- 2017}{Bachelor of Science}{University of Warsaw}{}{}{}  
-
-\cventry{2017 -- 2019}{Master of Science}{University of Warsaw}{}{}{}  % Arguments not required can be left empty
-
+\cventry{2017 -- 2019}{Master of Science}{University of Warsaw}{}{\scriptsize{Thesis: Devirtualization in LLVM}}{}
+\cventry{2013 -- 2017}{Bachelor of Science}{University of Warsaw}{}{\scriptsize{Thesis: Static Program Analysis in Clang}}{}  
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -77,24 +75,24 @@
 \section{Experience}
 
 %\subsection{Vocational}
+\cventry{July 2018 -- October 2018}{Software engineering intern}{\textsc{Google}}{Mountain View, USA}{}{
+Optimizing Tensorflow input pipeline API (tf.data).   Synthetic
+}
 
-\cventry{July 2017 -- October 2017}{Software engineer intern}{\textsc{Microsoft}}{Redmond, USA}{}{
+\cventry{May 2016 -- current}{R\&D Team leader}{\textsc{IIIT}}{Warsaw, Poland}{}{
+\href{https://github.com/prazek/clang-extra}{Working on C++ linter (clang-tidy)}, llvm optimizations, ML for SEO, robotics and blockchain
+}
+
+\cventry{July 2017 -- October 2017}{Software engineering intern}{\textsc{Microsoft}}{Redmond, USA}{}{
 Implementing Scalar evolution framework and SCEV expander optimization.
 }
 
+\cventry{July 2016 -- October 2016}{Software engineering intern}{\textsc{Google}}{Mountain View, USA}{}{\href{http://blog.llvm.org/2016/06/thinlto-scalable-and-incremental-lto.html}{Improvling importer heuristics in ThinLTO (scalable incremental Link Time Optimization). The improvement on SPEC 2006 with PGO was 0.62\% geomean with up to 9\% wins}}
 
-\cventry{May 2016 -- current}{Team leader}{\textsc{IIIT}}{Warsaw, Poland}{}{
-\href{https://github.com/prazek/clang-extra}{Developing clang-tidy} and researching
-different topics like ML for SEO and robotics
-}
-
-
-\cventry{July 2016 -- October 2016}{Software engineer intern}{\textsc{Google}}{Mountain View, USA}{}{\href{http://blog.llvm.org/2016/06/thinlto-scalable-and-incremental-lto.html}{Improvling importer heuristics in ThinLTO (scalable incremental Link Time Optimization). The improvement on SPEC 2006 with PGO was 0.62\% geomean with up to 9\% wins}}
-
-\cventry{July 2015 -- October 2015}{Software engineer intern}{\textsc{Google}}{Mountain View, USA}{}{\href{https://docs.google.com/document/d/1f2SGa4TIPuBGm6y6YO768GrQsA8awNfGEJSBFukLhYA/edit?usp=sharing}{Developing devirtualization (changing virtual to direct calls) for C++ in Clang and LLVM}}
+\cventry{July 2015 -- October 2015}{Software engineering intern}{\textsc{Google}}{Mountain View, USA}{}{\href{https://docs.google.com/document/d/1f2SGa4TIPuBGm6y6YO768GrQsA8awNfGEJSBFukLhYA/edit?usp=sharing}{Developing devirtualization (changing virtual to direct calls) for C++ in Clang and LLVM}}
 
 \cventry{July 2013 -- May 2016}{C++/Python developer}{\textsc{Gemius}}{Warsaw, Poland}{}{
-Rewriting GemiusAudience backend to C++,
+Optimizing GemiusAudience backend with C++,
 developing computing cloud with resources control in python,
 developing configurable monitoring files parser
 }
@@ -126,16 +124,16 @@ developing configurable monitoring files parser
 \cvitem{2012, 2013}{Finalist of Polish Innovation of Technology Olympiad}
 \cvitem{2013}{The Best IT project at the Youth Scientists Festival "EXPLORY"}
 \cvitem{2012}{Finalist of Polish Linguistics Olympiad}
-\cvitem{2009}{\href{https://youtu.be/q2ru-3RcOEQ}{Square-1 World Champion -- speed solving Rubik's cube competition}}
+\cvitem{2009}{\href{https://youtu.be/q2ru-3RcOEQ}{Square-1 World Champion -- competitive speed solving Rubik's cube}}
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Computer skills}
 
-\cvitem{Advanced}{\textsc{C++17}, \textsc{Python}, \textsc{Optimizations}, \textsc{Compilers and tools}}
-\cvitem{Intermediate}{\textsc{C}, \textsc{Algorithms}, \textsc{Deep learning}}
-\cvitem{Basic}{\textsc{Java}, \textsc{cuda}, \textsc{asm}, \textsc{Operating Systems}, \textsc{Networking}, \textsc{Linux}}
+\cvitem{Advanced}{\textsc{C++17}, \textsc{Optimizations}, \textsc{Compilers and tools}, \textsc{Python}}
+\cvitem{Intermediate}{\textsc{Deep learning}, \textsc{C}, \textsc{Algorithms}}
+\cvitem{Basic}{\textsc{cuda}, \textsc{Java},  \textsc{asm}, \textsc{Operating Systems}, \textsc{Networking}, \textsc{Linux}}
 
 
 
